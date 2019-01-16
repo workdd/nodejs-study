@@ -1,0 +1,14 @@
+{
+  "name": "chapter5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cjg9040/nodejsbook",
+  "author": "jg",
+  "license": "MIT",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "nodemon": "^1.18.9"
+  }
+}
