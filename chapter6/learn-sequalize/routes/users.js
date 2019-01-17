@@ -1,4 +1,5 @@
 var express = require('express');
+var {User} = require('../models');
 var router = express.Router();
 
 /* GET users listing. */
@@ -14,9 +15,9 @@ router.get('/', (req, res, next)=> {
 });
 router.post('/',(req,res,next)=>{
   User.create({
-    name:'',
-    age:'',
-    married:'',
+    name:req.body.name,
+    age:req.body.age,
+    married:req.body.married,
   })
     .then((result)=>{
       console.log(result);
@@ -25,6 +26,6 @@ router.post('/',(req,res,next)=>{
     .catch((err)=>{
       console.error(err);
       next(err);
-    })
+    });
 });
 module.exports = router;
