@@ -1,4 +1,4 @@
-module.exports = (sequalize,DataType) =>{
+module.exports = (sequelize,DataTypes) =>{
     return sequelize.define('comment',{
         comment:{
             type:DataTypes.STRING(100),
@@ -10,6 +10,6 @@ module.exports = (sequalize,DataType) =>{
             defaultValue:DataTypes.NOW
         },
     },{
-        timestamps:falue
+        timestamps:false
     });
 };
