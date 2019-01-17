@@ -1,0 +1,23 @@
+{
+  "name": "chapter9",
+  "version": "0.0.1",
+  "description": "익스프레스로 만드는 SNS 서비스",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjg9040/nodejsbook.git"
+  },
+  "author": "JaeGhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cjg9040/nodejsbook/issues"
+  },
+  "homepage": "https://github.com/cjg9040/nodejsbook#readme",
+  "dependencies": {
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
