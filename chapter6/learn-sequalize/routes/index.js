@@ -3,9 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //res.render('index', { title: 'Express' });
-  res.locals.title = 'Express1';
-  res.render('index');
+  res.render('sequelize',{title:'Express',users:{}});
 });
 
 module.exports = router;
