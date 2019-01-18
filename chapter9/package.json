@@ -17,14 +17,21 @@
   },
   "homepage": "https://github.com/cjg9040/nodejsbook#readme",
   "dependencies": {
+    "bcrypt": "^3.0.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "install": "^0.12.2",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.4",
+    "node-pre-gyp": "^0.12.0",
+    "passport": "^0.4.0",
+    "passport-kakao": "0.0.5",
+    "passport-local": "^1.0.0",
     "pug": "^2.0.3",
+    "python": "0.0.4",
     "sequelize": "^4.42.0"
   },
   "devDependencies": {
