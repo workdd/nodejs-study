@@ -5,12 +5,7 @@ const {isLoggedIn,isNotLoggedIn} = require('./middlewares');
 const {User} = require('../models');
 const router = express.Router();
 
-router.get('/kakao',passport.authenticate('kakao'));
-router.get('kakao/callback',passport.authenticate('kakao',{
-    failureRedirect:'/',
-}),(req,res)=>{
-    res.redirect('/');
-});
+
 router.post('/join',isNotLoggedIn,async(req,res,next)=>{
     const {email,nick,password} = req.body;
     try{
@@ -58,4 +53,10 @@ router.get('/logout',isLoggedIn,(req,res)=>{
     res.redirect('/');
 })
 
+router.get('/kakao',passport.authenticate('kakao'));
+router.get('/kakao/callback',passport.authenticate('kakao',{
+    failureRedirect:'/',
+}),(req,res)=>{
+    res.redirect('/');
+});
 module.exports = router;
